@@ -5,6 +5,9 @@ body{
     overflow-x: hidden;
     font-family: 'Oswald';
 }
+#hero, .card{
+    cursor:grabbing;
+} 
 .hero_desc{
     position: absolute;
     width: 100vw;
@@ -49,9 +52,17 @@ section{
     height: 100%;
 }
 .cards{
-    display: flex;
-    justify-content: space-around;
     padding: 10px 78px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 1200px){
+     .cards{
+        flex-direction: row;
+        justify-content: space-around;
+     }   
 }
 .card{
     display: flex;
@@ -59,6 +70,11 @@ section{
     align-items: center;
     width: 500px;
     box-shadow: 0 0 7px 0px #d0d0d0;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+canvas{
+    border-radius: 30px;
 }
 .card p{
     text-transform: uppercase;

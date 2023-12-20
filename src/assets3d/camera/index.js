@@ -1,7 +1,7 @@
-const camera = {
-    position : [0, 0, 3]
+function GenerateConfigCamera(position){
+    return {position:position}
 }
-const camerab = {
-    position: [window.innerWidth/2, 0, 1000]
-}
+
+const camera = GenerateConfigCamera([0,0,3])
+const camerab = GenerateConfigCamera([window.innerWidth/2, 0, 1000])
 export {camera, camerab};

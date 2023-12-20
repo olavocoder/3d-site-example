@@ -1,14 +1,13 @@
-const luz = {
-    type: 'point',
-    intensity: 1,
-    color: 0xffffff,
-    position: [-2, -4, 11]
+function GenerateConfigLight(type, intensity, color, position){
+    return{
+        type: type,
+        intensity: intensity,
+        color: color,
+        position: position
+    }
 }
-const luzB = {
-    type: 'point',
-    intensity: 1,
-    color: 0xffffff,
-    position: [-1, -4, 11]
-}
+
+const luz = GenerateConfigLight('point', 1, 0xffffff, [-2, -4, 11])
+const luzB = GenerateConfigLight('point',1,0xffffff,[-1, -4, 11])
 
 export {luz, luzB};

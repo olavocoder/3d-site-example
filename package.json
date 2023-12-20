@@ -23,7 +23,10 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^8.56.0",
+    "pretier": "^0.0.1"
+  },
   "directories": {
     "test": "test"
   },

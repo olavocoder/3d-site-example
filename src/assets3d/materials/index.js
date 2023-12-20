@@ -108,6 +108,7 @@ const material3dD = {
         flatShading: false 
     }
 }
+
 export {material3d, material3dA, material3dB, material3dC, materialConcreto, material3dD};
 
 //link para geração de normalmaps:

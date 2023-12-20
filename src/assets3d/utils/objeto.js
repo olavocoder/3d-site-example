@@ -118,9 +118,6 @@ function objeto(id, config, material3d, luz, camera, cena){
 			});
 		}
 
-
-
-
 		renderer = new THREE.WebGLRenderer();
 		renderer.setPixelRatio( window.devicePixelRatio );
 		renderer.setSize( canvasWidth, canvasheight);
@@ -130,7 +127,6 @@ function objeto(id, config, material3d, luz, camera, cena){
 		controls.addEventListener( 'change', render );
 	}
 	function animate() {
-
 		requestAnimationFrame( animate );
 		render();
 	}
